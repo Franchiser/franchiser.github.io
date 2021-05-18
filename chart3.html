@@ -135,13 +135,6 @@ var fx = getParameterByName('value');
 
     }
   ];
-	    
-//var overr = [
-//	{
-//        "mainSeriesProperties.showCountdown": true
-//        }
-//	];
-
       new TradingView.widget({
         "autosize": true,
         "symbol": "FX:"+fx,
@@ -156,7 +149,7 @@ var fx = getParameterByName('value');
         "allow_symbol_change": true,
         "hideideas": true,
 	"hidevolume": false,
-	"overrides": {"mainSeriesProperties.showCountdown": true}      
+	"overrides": {"mainSeriesProperties.showCountdown": true},      
         "studies": studies      
       });
     </script>
@@ -180,9 +173,7 @@ var fx = getParameterByName('value');
         "allow_symbol_change": true,
         "hideideas": true,
 	"hidevolume": false,
-        "studies": studies,
-	"overrides": {
-        "mainSeriesProperties.showCountdown": true}     
+        "studies": studies 
       });
     </script>
     <!-- TradingView Widget END -->
@@ -205,10 +196,7 @@ var fx = getParameterByName('value');
         "allow_symbol_change": true,
         "hideideas": true,
 	"hidevolume": false,
-        "studies": studies,
-	"overrides": {
-                            "mainSeriesProperties.showCountdown": true
-                        }      
+        "studies": studies      
       });
     </script>
     <!-- TradingView Widget END -->
