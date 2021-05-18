@@ -135,6 +135,13 @@ var fx = getParameterByName('value');
 
     }
   ];
+	    
+var overr = [
+	"overrides": {
+                            "mainSeriesProperties.showCountdown": true
+                        }
+	]
+
       new TradingView.widget({
         "autosize": true,
         "symbol": "FX:"+fx,
@@ -174,9 +181,7 @@ var fx = getParameterByName('value');
         "hideideas": true,
 	"hidevolume": false,
         "studies": studies,
-	"overrides": {
-	"mainSeriesProperties.showCountdown": true
-	}      
+	"overrides": overr     
       });
     </script>
     <!-- TradingView Widget END -->
