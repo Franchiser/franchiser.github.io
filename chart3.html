@@ -92,7 +92,9 @@
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 var fx = getParameterByName('value');
-
+    var ov = [
+	    {"mainSeriesProperties.showCountdown": true}
+	    ];  
     var studies = [
   //  {
   //    id: "BB@tv-basicstudies",
@@ -149,7 +151,7 @@ var fx = getParameterByName('value');
         "allow_symbol_change": true,
         "hideideas": true,
 	"hidevolume": false,
-	"overrides": [{"mainSeriesProperties.showCountdown": true}],      
+	"overrides": ov,      
         "studies": studies      
       });
     </script>
