@@ -136,11 +136,11 @@ var fx = getParameterByName('value');
     }
   ];
 	    
-var overr = [
-	{
-        "mainSeriesProperties.showCountdown": true
-        }
-	];
+//var overr = [
+//	{
+//        "mainSeriesProperties.showCountdown": true
+//        }
+//	];
 
       new TradingView.widget({
         "autosize": true,
@@ -181,7 +181,11 @@ var overr = [
         "hideideas": true,
 	"hidevolume": false,
         "studies": studies,
-	"overrides": overr     
+	"overrides": [
+	{
+        "mainSeriesProperties.showCountdown": true
+        }
+	]     
       });
     </script>
     <!-- TradingView Widget END -->
